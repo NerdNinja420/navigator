@@ -2,7 +2,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process;
 
-use logging::{err, rcmd};
+use loggingg::{err, rcmd};
 
 fn resolve(base: &Path, args: &[String]) -> Result<PathBuf, String> {
     let mut current = base.to_path_buf();

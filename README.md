@@ -7,6 +7,12 @@ https://github.com/user-attachments/assets/16c80db4-940b-4cf7-9768-7c9328fda4aa
 - Provides fuzzy directory navigation and completion for shell environments.
 - Simple prefix-based matching with ambiguity detection.
 
+## Installation
+
+```sh
+cargo install ayran
+```
+
 ## Usage
 
 ```sh
@@ -65,14 +71,6 @@ compadd -S '' -a opts
 ## Requirements
 
 - Rust 1.75 or later
-
-## Installation
-
-### Arch Linux
-
-```sh
-cargo install ayran
-```
 
 ## License
 

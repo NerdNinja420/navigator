@@ -2,11 +2,14 @@
 name = "ayran"
 version = "0.1.0"
 edition = "2024"
+description = "Fuzzy Directory Navigation Tool"
+license = "MIT"
+repository = "https://github.com/NerdNinja420/ayran"
 
 [[bin]]
 name = "ayran"
 path = "src/main.rs"
 
 [dependencies]
-logging = { git = "https://github.com/NerdNinja420/logging.git" }
+loggingg = "0.1.0"
 

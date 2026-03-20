@@ -1,9 +1,6 @@
 # Ayran - Fuzzy Directory Navigation Tool
 
-<video controls width="100%">
-    <source src="./assets/ayran.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/16c80db4-940b-4cf7-9768-7c9328fda4aa
 
 ## Purpose
 

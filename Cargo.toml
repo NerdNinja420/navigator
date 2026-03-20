@@ -1,0 +1,12 @@
+[package]
+name = "navigator"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "navigator"
+path = "src/main.rs"
+
+[dependencies]
+logging = { git = "git@github.com:NerdNinja420/logging.git" }
+

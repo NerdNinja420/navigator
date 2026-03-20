@@ -1,7 +1,7 @@
-# Navigator - Fuzzy Directory Navigation Tool
+# Ayran - Fuzzy Directory Navigation Tool
 
 <video controls width="100%">
-    <source src="./assets/navigator.mp4" type="video/mp4">
+    <source src="./assets/ayran.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
@@ -13,7 +13,7 @@
 ## Usage
 
 ```sh
-./target/release/navigator [--complete] <base_dir> [args...]
+./target/release/ayran [--complete] <base_dir> [args...]
 ```
 
 ### Arguments
@@ -27,8 +27,8 @@
 ### Examples
 
 ```sh
-./target/release/navigator /home/user/documents pro
-./target/release/navigator --complete /home/user/documents pr
+./target/release/ayran /home/user/documents pro
+./target/release/ayran --complete /home/user/documents pr
 ```
 
 ## Usage Example 
@@ -68,13 +68,13 @@ compadd -S '' -a opts
 ## Requirements
 
 - Rust 1.75 or later
-- logging crate (git dependency: git@github.com:NerdNinja420/logging.git)
 
 ## Installation
 
 ### Arch Linux
 
 ```sh
+cargo install ayran
 ```
 
 ## License

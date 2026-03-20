@@ -1,12 +1,12 @@
 [package]
-name = "navigator"
+name = "ayran"
 version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "navigator"
+name = "ayran"
 path = "src/main.rs"
 
 [dependencies]
-logging = { git = "git@github.com:NerdNinja420/logging.git" }
+logging = { git = "https://github.com/NerdNinja420/logging.git" }
 

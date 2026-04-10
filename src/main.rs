@@ -11,7 +11,7 @@ fn resolve(base: &Path, args: &[String]) -> Result<PathBuf, String> {
         let mut all_matches: Vec<PathBuf> = fs::read_dir(&current)
             .map_err(|e| format!("Cannot read '{}': {}", current.display(), e))?
             .filter_map(|e| e.ok())
-            .filter(|e| e.file_type().map(|t| t.is_dir()).unwrap_or(false))
+            .filter(|e| e.path().is_dir())
             .filter(|e| e.file_name().to_string_lossy().starts_with(arg.as_str()))
             .map(|e| e.path())
             .collect();
@@ -60,7 +60,7 @@ fn list_completions(base: &Path, args: &[String]) {
         .into_iter()
         .flatten()
         .filter_map(|e| e.ok())
-        .filter(|e| e.file_type().map(|t| t.is_dir()).unwrap_or(false))
+        .filter(|e| e.path().is_dir())
         .map(|e| e.file_name().to_string_lossy().to_string())
         .filter(|n| n.starts_with(prefix))
         .collect();
